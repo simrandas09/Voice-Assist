@@ -19,6 +19,9 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Column(
         children: [
+          //virtual assistant picture
+          Stack(
+            children: [
           Center(
             child: Container(
               height: 120,
@@ -40,6 +43,33 @@ class _HomePageState extends State<HomePage> {
                 )
             )
           )
+            ]
+          ),
+          //chat bubble
+          Container(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 20,
+              vertical: 10,
+            ),
+            margin: const EdgeInsets.symmetric(horizontal: 40,).copyWith(
+              top: 30,
+            ),
+            decoration: BoxDecoration(
+              border: Border.all(
+                color: Pallete.borderColor,
+              ),
+          ),
+          child:  const Padding(
+            padding:  EdgeInsets.symmetric(vertical: 10.0),
+            child:  Text(
+              'Good Morning, what task can i do for you?', 
+            style: TextStyle(
+              fontFamily: 'Cera Pro',
+              color: Pallete.mainFontColor,
+              fontSize: 25,
+            )),
+          ),
+          ),
         ],
       )
       );
