@@ -58,6 +58,9 @@ class _HomePageState extends State<HomePage> {
               border: Border.all(
                 color: Pallete.borderColor,
               ),
+              borderRadius:  BorderRadius.circular(20).copyWith(
+                topLeft: Radius.zero,
+              ),
           ),
           child:  const Padding(
             padding:  EdgeInsets.symmetric(vertical: 10.0),
@@ -70,6 +73,24 @@ class _HomePageState extends State<HomePage> {
             )),
           ),
           ),
+          Container(
+            padding: const EdgeInsets.all(10),
+            alignment: Alignment.centerLeft,
+            margin: const EdgeInsets.only(
+              top: 10,
+              left: 22
+            ),
+            child: const Text('Here are a few features',style: TextStyle(
+              fontFamily: 'Cera Pro',
+              color: Pallete.mainFontColor,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            )),
+          )
+          //features list
+          
+
+
         ],
       )
       );
